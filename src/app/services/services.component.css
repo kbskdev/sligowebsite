@@ -1,0 +1,89 @@
+:host{
+  display: flex;
+  width: 83%;
+  height:89%;
+  border: 0px solid white;
+  margin-top: 4.8%;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 8.3vw;
+  animation: linear 0.5s show;
+
+}
+
+@keyframes show {
+  0%{
+    opacity: 0;
+
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.short, .long{
+  width: 70%;
+  border: 3px solid #fa8500;
+  margin-bottom: 25px;
+  padding: 6px;
+  box-sizing: border-box;
+  transition-duration: 0.1s;
+  background: rgba(0,0,0,0.4);
+}
+.short:hover, .long:hover{
+  border: 5px solid #fa8500;
+  padding: 4px;
+}
+.transport{
+  width: 40%;
+  height: auto;
+  border: #ed0000 3px solid;
+  padding: 6px;
+  transition-duration: 0.1s;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.4)
+}
+.transport:hover{
+  border: #ed0000 5px solid;
+  padding: 4px;
+}
+.training{
+  width: 40%;
+  border: #ed0000 3px solid;
+  padding: 6px;
+  transition-duration: 0.1s;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.4)
+}
+.training:hover{
+  border: #ed0000 5px solid;
+  padding: 4px;
+}
+.transport-and-training{
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+.accomodation{
+  width: 70%;
+  border: 2px solid #fa8500;
+  transition-duration: 0.1s;
+  padding: 6px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  background: rgba(0,0,0,0.4)
+}
+.accomodation:hover{
+  border: 5px solid #fa8500;
+  padding: 3px;
+}
+.space{
+  width: 70%;
+  height: 20px;
+}

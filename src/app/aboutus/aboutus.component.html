@@ -1,0 +1,40 @@
+<div class="introduction">
+  <div class="header">YIT in Sligo</div>
+</div>
+
+<div class="about-sligo" (click)="switch(0)">About Sligo
+  <img class="scrolldown" src="assets/down-arrow.png">
+
+</div>
+
+<div class="about-us" (click)="switch(1)">About Us
+  <img class="scrolldown" src="assets/down-arrow.png">
+
+</div>
+<div class="text-container">
+  <div class="sligo-text text" *ngIf="mode[0]">
+    Located in the northwest of Ireland, Sligo is the principal city and commercial base of county Sligo, and is a designated gateway city, where you can experience urban life, yet take in quiet mountain walks, cycle forest trials or enjoy Europe’s best surfing within minutes.
+  <br><br>
+    Sligo meaning “abounding in Shells” in Irish & with a population of over 20,000 people, it boasts many fine shops, restaurants and friendly amenities for both young and old alike.
+    Sligo is a county of myths and legends to the poetry of Yeats and music of Westlife, Sligo’s cultural and literary heritage is world famous.
+    <h6>5 Must do’s when in Sligo out of an endless list of possibilities: </h6>
+    <h5>Benbulbin</h5>
+    &nbsp;&nbsp;The iconic flat-topped Benbulben mountain has dominated the landscape for over 300 million years. A walk around Gleniff Horseshoe trial is a must.
+
+    <h5>Sligo Abbey </h5>
+    &nbsp;&nbsp;In the heart of Sligo Town, explore Sligo Abbey, a medieval Dominican monastery built in 1252 and destroyed by an accidental candle fire in 1414. Home to Gothic and Renaissance works of art, legend has it that its silver bell was thrown in Lough Gill and only those living sin-free lives can hear it ring.
+
+    <h5>Coney Island </h5>
+    &nbsp;&nbsp;At low tide, you can drive or walk across the 5km long causeway from Rosses Point and escape from it all on Coney Island.  With sweeping sandy beaches, lush green fields and gentle hills, Coney Island is a proper hidden treasure.
+
+    <h5>Mullaghmore Head </h5>
+    &nbsp;&nbsp;Home to some of the best big-wave surfing on the planet, Mullaghmore Head is a world-renowned destination for surf lovers. Grab a seat and watch daredevils ride giant waves, some as big as 30ft, or take a stroll along the cliffs and beaches with the striking Classiebawn Castle and Benbulben in the distance.
+
+    <h5>Drumcliffe </h5>
+    &nbsp;&nbsp;In the foothills of his beloved Benbulbin in Drumcliffe Church, lies the final resting place of the poet WB Yeats. This pictufamous resque and quiet place is a must-visit if only to read for yourself the poet’s epithet:  "Cast a cold eye on life, on death Horseman, pass by."
+  </div>
+  <div class="us-text text" *ngIf="mode[1]">
+
+  </div>
+</div>
+<div class="blank"></div>

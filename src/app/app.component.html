@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div [ngStyle]="{'background-image': 'url(' + photo + ')'}" class="photo"></div>
+
+  <div [ngClass]="homeboll?'':'wide'" class="left-container">
+      <app-homepage *ngIf="homeboll"></app-homepage>
+      <app-aboutus  *ngIf="list[0]" ></app-aboutus>
+      <app-services *ngIf="list[1]" ></app-services>
+      <app-contact  *ngIf="list[2]" ></app-contact>
+      <app-aboutsligo *ngIf="list[3]"></app-aboutsligo>
+      <app-faq *ngIf="list[4]"></app-faq>
+      <app-gallery *ngIf="list[5]"></app-gallery>
+    <div [ngClass]="homeboll?'right-sided':''" (click)="shower(0)" class="about-us-tab tab">About us</div>
+    <div [ngClass]="homeboll?'right-sided':''" (click)="shower(1)" class="services-tab tab">Services</div>
+    <div [ngClass]="homeboll?'right-sided':''" (click)="shower(2)" class="contact-tab tab">Contact</div>
+    <div [ngClass]="homeboll?'right-sided':''" (click)="shower(3)" class="gallery-tab tab">Gallery</div>
+    <div [ngClass]="homeboll?'right-sided':''" (click)="shower(4)" class="faq-tab tab">FAQ</div>
+  </div>
+</div>
+
+
+
+<!--      <app-homepage *ngIf="list[0]" class="closed"></app-homepage>-->
+<!--      <app-aboutsligo *ngIf="list[1]" class="closed"></app-aboutsligo>-->
+<!--      <app-faq *ngIf="list[2]" class="closed"></app-faq>-->
+
+  <!--    <app-aboutus class="closed"></app-aboutus>-->
+  <!--    <app-gallery class="closed"></app-gallery>-->
+  <!--    <app-services class="closed"></app-services>-->

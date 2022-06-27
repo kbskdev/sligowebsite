@@ -1,0 +1,128 @@
+:host{
+  width: 70%;
+  height: 150%;
+  display: flex;
+  z-index: 100;
+  border: var(--border) solid white;
+  --border: 0px;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  margin-right: -9%;
+  flex-wrap: wrap;
+  color: white;
+  animation: linear 0.5s show;
+
+}
+.introduction{
+  margin-top: 50px;
+  width: 90%;
+  height: 10%;
+}
+.header{
+  font-size: 50px;
+  text-align: center;
+}
+.about-sligo{
+  width: 45%;
+  height: 10%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  border: 3px solid #fa8500;
+  transition-duration: 0.5s;
+}
+.about-sligo:hover{
+  background: rgba(255,130,0,0.8);
+  transform: scale(1.03);
+
+}
+.about-us:hover{
+  background: rgba(237,0,0,0.8);
+  transform: scale(1.03);
+
+}
+.about-us{
+  width: 45%;
+  height: 10%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 50px;
+  border: #ed0000 3px solid;
+  transition-duration: 0.5s;
+}
+.blank{
+  height: 15%;
+  width: 100%;
+  border: var(--border) solid;
+  box-sizing: border-box;
+}
+.text-container{
+  position: absolute;
+  top: 40%;
+  left: 19%;
+  height: 300%;
+  width: 70%;
+  overflow: hidden;
+}
+h6{
+  text-align: center;
+  font-size: 50px;
+}
+h5{
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 5px;
+  margin-left: -5px;
+  border: 1px solid white;
+  background: linear-gradient(-45deg, #fc0505, #630101);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes show {
+  0%{
+    opacity: 0;
+
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.text{
+  height: 100%;
+  width: calc(100%-80px);
+  animation: 0.5s linear slide;
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  padding: 40px;
+  font-size: 28px;
+}
+@keyframes slide {
+  0%{
+    bottom: 100%;
+  }
+  100%{
+    bottom: 0;
+  }
+}
+.scrolldown{
+  height: 30%;
+}

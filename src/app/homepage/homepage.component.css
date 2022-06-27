@@ -1,0 +1,22 @@
+:host{
+  color:white!important;
+  width: 80%;
+  height: 90%;
+  display: flex;
+  margin-left: -2%;
+  margin-top: 2%;
+  align-content: space-around;
+  flex-wrap: wrap;
+
+}
+.header{
+  width: 75%;
+  font-size: 45px;
+  font-family: 'open sans',sans-serif;
+  border: 0px solid white;
+  box-sizing: border-box;
+}
+.text{
+  font-size: 30px;
+
+}
