@@ -2,7 +2,7 @@
   width: 70%;
   height: 150%;
   display: flex;
-  z-index: 100;
+  z-index: 1;
   border: var(--border) solid white;
   --border: 0px;
   justify-content: space-evenly;
@@ -37,12 +37,18 @@
 .about-sligo:hover{
   background: rgba(255,130,0,0.8);
   transform: scale(1.03);
-
 }
 .about-us:hover{
   background: rgba(237,0,0,0.8);
   transform: scale(1.03);
-
+}
+.about-us-on{
+  background: rgba(237,0,0,1)!important;
+  transform: scale(1.03);
+}
+.about-sligo-on{
+  background: rgba(255,130,0,1)!important;
+  transform: scale(1.03);
 }
 .about-us{
   width: 45%;
@@ -73,30 +79,25 @@
 h6{
   text-align: center;
   font-size: 50px;
+  margin-bottom: 10px;
 }
 h5{
   text-align: center;
   font-size: 40px;
-  margin-bottom: 5px;
   margin-left: -5px;
-  border: 1px solid white;
-  background: linear-gradient(-45deg, #fc0505, #630101);
-  background-size: 400% 400%;
-  animation: gradient 5s ease infinite;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.darker{
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  transition-duration: 0.4s;
+  box-sizing: border-box;
 }
-
+.darker:hover{
+  background: rgba(0,0,0,0.9);
+}
 @keyframes show {
   0%{
     opacity: 0;
@@ -108,7 +109,7 @@ h5{
 }
 .text{
   height: 100%;
-  width: calc(100%-80px);
+  width: calc(100% - 80px);
   animation: 0.5s linear slide;
   background: rgba(0,0,0,0.6);
   position: absolute;
@@ -125,4 +126,8 @@ h5{
 }
 .scrolldown{
   height: 30%;
+  transition-duration: 0.5s;
+}
+.scrolldown-on{
+  transform: rotate(180deg);
 }
