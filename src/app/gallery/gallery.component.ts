@@ -9,13 +9,17 @@ import { FirebaseService } from '../services/firebase.service';
 })
 export class GalleryComponent implements OnInit {
 
-
+  albums:any[] = [];
   constructor(private firebaseService:FirebaseService) {
   }
 
   ngOnInit(): void {
     this.firebaseService.GetAlbums()
-      .then((res) => console.log(res))
+      .then(data => {
+        data.forEach(doc => {
+          this.albums.push(doc.data()['name'])
+        })
+      })
 
 
     console.log("chujec kamulec")
