@@ -15,6 +15,14 @@
   --border:0px;
   animation: 0.5s linear show;
 }
+@media only screen and (max-width: 700px){
+  :host{
+    margin-top: 16%!important;
+  }
+  .container{
+    height: auto!important;
+  }
+}
 
 @keyframes show {
   0%{
@@ -33,7 +41,7 @@
   margin-bottom: 20px;
 }
 .container{
-  width: 70%;
+  width: 90%;
   height: 25%;
   border: var(--border) solid white;
   box-sizing: border-box;
@@ -68,7 +76,7 @@
   background: rgba(0,0,0,0.7);
 }
 .line{
-  width: 72%;
+  width: 92%;
   height: 2px;
   background: #ed0000;
   margin-top: 10px;

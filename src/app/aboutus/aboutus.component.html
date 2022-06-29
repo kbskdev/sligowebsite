@@ -2,7 +2,7 @@
   <div class="header">YIT in Sligo</div>
 </div>
 
-<div class="about-sligo" [ngClass]="mode[0]?'about-sligo-on':''" (click)="switch(0)">About Sligo
+<div class="about-sligo" (click)="switch(0)" [ngClass]="mode[0]?'about-sligo-on':''" >About Sligo
   <img [ngClass]="mode[0]?'scrolldown-on':''" class="scrolldown" src="assets/down-arrow.png">
 
 </div>

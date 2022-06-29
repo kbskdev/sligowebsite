@@ -8,17 +8,15 @@
   justify-content: space-evenly;
   align-items: center;
 }
-.tile{
 
-}
 .covid{
   background-color: #FFCC00;
-  width: 15%!important;
+  width: 15%;
   height: 80%;
   box-sizing: border-box;
   transition-duration: 0.3s;
   font-family: 'Hind Siliguri', sans-serif;
-  font-size: 20px;
+  font-size: 1.7vw;
   color: white;
   position: relative;
   right: 1.2%;
@@ -33,15 +31,15 @@
   margin-right: -20%;
 }
 .socialmedia{
-  width: 15%!important;
+  width: 15%;
   height: 80%; display: flex;
   justify-content: space-around;
   margin-left: -20%;
 }
 .facebook,.instagram,.twitter,.covid-logo{
-  height: 80%!important;
-  position: relative!important;
-  top: 10%!important;
+  height: 80%;
+  position: relative;
+  top: 10%;
   aspect-ratio: auto;
   transition-duration: 0.2s;
 }
@@ -62,7 +60,7 @@
 }
 .covid-logo{
   top: 0!important;
-  left:  4%!important;
+  left:  0%!important;
 }
 .covid:hover{
   background-color: #FF8200;
@@ -84,6 +82,40 @@
   box-shadow: 0px 0px 9px 0px #000000;
   -moz-box-shadow: 0px 0px 9px 0px #000000;
   z-index: 100;
+}
+@media only screen and (max-width: 700px) {
+  :host{
+    justify-content: space-between;
+  }
+  .logo{
+    margin-top:30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 20%;
+    height: auto;
+    width: 30%;
+    aspect-ratio: 426/280;
+    -webkit-box-shadow: 0px 0px 9px 0px #000000;
+    box-shadow: 0px 0px 9px 0px #000000;
+    -moz-box-shadow: 0px 0px 9px 0px #000000;
+    z-index: 100;
+  }
+  .covid{
+    width: 30%;
+    margin-left: 10px;
+    font-size: 4vw;
+  }
+  .covid-logo{
+    height: 50%;
+
+  }
+  .socialmedia{
+    width: 30%;
+
+  }
+  .facebook,.instagram,.twitter{
+    height: 60%;
+  }
 }
 .logo:hover{
   transform: scale(1.1);

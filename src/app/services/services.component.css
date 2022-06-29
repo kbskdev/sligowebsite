@@ -25,6 +25,25 @@
     opacity: 1;
   }
 }
+@media only screen and (max-width: 700px){
+  :host{
+    margin-left: 4vw!important;
+  }
+  .short, .long{
+    margin-top: 10vh!important;
+    width: 100%!important;
+  }
+  .training{
+    width: 100%!important;
+    margin-bottom: 5vh!important;
+  }
+  .transport{
+    width: 100%!important;
+  }
+  .accomodation{
+    width: 100%!important;
+  }
+}
 .short, .long{
   width: 70%;
   border: 3px solid #fa8500;
@@ -64,11 +83,12 @@
   padding: 4px;
 }
 .transport-and-training{
-  width: 70%;
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: space-around;
   margin-bottom: 25px;
+  flex-wrap: wrap;
 }
 .accomodation{
   width: 70%;

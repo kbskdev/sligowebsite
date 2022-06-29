@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-<div class="container">
+
   <div [ngStyle]="{'background-image': 'url(' + photo + ')'}" class="photo"></div>
 
   <div [ngClass]="homeboll?'':'wide'" class="left-container">
@@ -15,14 +15,5 @@
     <div [ngClass]="homeboll?'right-sided':''" (click)="shower(3)" class="gallery-tab tab">Gallery</div>
     <div [ngClass]="homeboll?'right-sided':''" (click)="shower(4)" class="faq-tab tab">FAQ</div>
   </div>
-</div>
 
 
-
-<!--      <app-homepage *ngIf="list[0]" class="closed"></app-homepage>-->
-<!--      <app-aboutsligo *ngIf="list[1]" class="closed"></app-aboutsligo>-->
-<!--      <app-faq *ngIf="list[2]" class="closed"></app-faq>-->
-
-  <!--    <app-aboutus class="closed"></app-aboutus>-->
-  <!--    <app-gallery class="closed"></app-gallery>-->
-  <!--    <app-services class="closed"></app-services>-->
