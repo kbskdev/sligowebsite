@@ -1,6 +1,62 @@
 :host{
-  width: 10%;
-  background: brown;
-  display: block;
+  width: 80%;
+  /*background: brown;*/
+  /*display: block;*/
   z-index: 100;
+  padding: 100px 50px;
+
+}
+#album-list{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-right: 80px;
+  box-sizing: border-box;
+}
+.image-container{
+  height: 100px;
+  width: 100px;
+  margin: 5px;
+}
+.image-container>img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid black;
+  box-shadow: #020a1c 5px 5px;
+}
+
+#album-gallery{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.album-container{
+  width: 120px;
+  height: 150px;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.album-container a{
+  width: 100%;
+  text-align: center;
+}
+.album-container a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.album-container img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }

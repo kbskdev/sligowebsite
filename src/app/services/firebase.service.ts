@@ -54,11 +54,67 @@ export class FirebaseService {
   async DeleteAlbum(name: string) {
     const db = getFirestore();
     await deleteDoc(doc(db, "albums", name));
+
+    await this.DeleteAlbumContents(name);
   }
 
   async GetAlbums() {
     const q = query(collection(getFirestore(), "albums"))
     const querySnapshot = await getDocs(q);
     return querySnapshot
+  }
+
+  async GetAllFileUrls(path: string) {
+    const storage = getStorage();
+
+    // Create a reference under which you want to list
+    const listRef = ref(storage, path);
+
+    const storageItems = await listAll(listRef)
+
+    const urls = []
+    const names = []
+
+    for (const itemRef of storageItems.items) {
+      urls.push(await getDownloadURL(itemRef))
+      names.push(itemRef.name)
+    }
+
+    return {
+      urls: urls,
+      names: names
+    }
+  }
+
+  async GetFirstFileUrl(albumName: string) {
+    const storage = getStorage();
+
+    // Create a reference under which you want to list
+    const listRef = ref(storage, `images/${albumName}`);
+
+
+    const storageItems = await listAll(listRef)
+
+    let fileUrl = "";
+
+    try {
+      fileUrl = await getDownloadURL(storageItems.items[0])
+    } catch (e) {
+      console.log(e)
+    }
+
+    return {
+      url: fileUrl
+    }
+
+    return {
+      url: fileUrl
+    }
+
+
+  }
+
+  async DeleteAlbumContents(albumName:string){
+
   }
 }
