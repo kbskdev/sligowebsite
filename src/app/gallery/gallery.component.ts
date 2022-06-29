@@ -21,7 +21,6 @@ export class GalleryComponent implements OnInit {
         })
       })
 
-
     console.log("chujec kamulec")
   }
 
