@@ -2,8 +2,17 @@
   display: block;
   width: 100vw;
   height: 90vh;
-}
 
+}
+@keyframes show {
+  0%{
+    opacity: 0;
+
+  }
+  100%{
+    opacity: 1;
+  }
+}
 .left-text{
   width: 70%;
   height: 80%;
@@ -14,11 +23,13 @@
 }
 .photo{
   background-repeat: no-repeat;
-
+  background-position: center;
+  background-size: 90%;
   height: 100%;
   width: 100%;
   -webkit-box-shadow: inset 0px 0px 16px 0px #000000;
   box-shadow: inset 0px 0px 16px 0px #000000;
+  animation: linear 0.5s show;
 }
 .left-container{
   position: absolute;
