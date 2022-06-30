@@ -13,11 +13,7 @@
   animation: linear 0.5s show;
 
 }
-@media only screen and (max-height: 800px){
-  .text-container{
-    height: 800%!important;
-  }
-}
+
 @media only screen and (max-width: 700px){
   .header{
     font-size: 9vw!important;
@@ -38,6 +34,7 @@
     height: 500%!important;
     width: 100%!important;
     left: 0%!important;
+    top:70%!important;
     overflow: auto!important;
   }
 }
@@ -101,7 +98,7 @@
 }
 .text-container{
   position: absolute;
-  top: 70%;
+  top: 40%;
   left: 19%;
   height: 300%;
   width: 70%;
