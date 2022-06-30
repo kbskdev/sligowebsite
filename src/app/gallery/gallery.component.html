@@ -1,15 +1,5 @@
-<div *ngIf="isAlbumSelected;else albumList" id="album-list">
-  <div *ngFor="let image of imageUrls" class="image-container">
-    <img src="{{image}}"/>
-  </div>
+<div id="image-gallery-container">
+
+  <img *ngFor="let image of images" [src]="image" (click)="enlargeImage(image)" )>
 </div>
-<ng-template #albumList>
-  <div id="album-gallery">
-    <div *ngFor="let album of albums; let i = index" class="album-container">
-      <img
-        src="{{thumbnails[i]}}">
-      <a (click)="SelectAlbum(album)">{{album}}</a>
-    </div>
-  </div>
-</ng-template>
 

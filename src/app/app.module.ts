@@ -12,15 +12,6 @@ import { ServicesComponent } from './services/services.component';
 import { FaqComponent } from './faq/faq.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-import { AngularFireModule } from '@angular/fire/compat';
-import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
-import { getFirestore, provideFirestore } from '@angular/fire/firestore';
-// import { AngularFireStorageModule } from '@angular/fire/compat/storage';
-// import { AngularFireAuthModule } from '@angular/fire/compat/auth';
-
-
-
 
 @NgModule({
   declarations: [
@@ -37,8 +28,6 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // AngularFireAuthModule, // auth
-    // AngularFireStorageModule // storage
   ],
   providers: [],
   bootstrap: [AppComponent]
