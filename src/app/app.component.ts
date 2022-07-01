@@ -7,9 +7,9 @@ import {AppRoutingModule} from "./app-routing.module";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  photo:string = "../../assets/polonia2.jpg"
 
-  photos:string[] = ["../../assets/polonia2.jpg","../../assets/chujec_kamulec.jpg","../../assets/chujec_kamulec2.jpg","../../assets/chujec_kamulec3.jpg"]
+
+  photos:string[] = ["../../assets/polonia2.jpg","../../assets/radom.jpg","../../assets/chujec_kamulec.jpg","../../assets/chujec_kamulec4.jpg","../../assets/chujec_kamulec2.jpg","../../assets/chujec_kamulec3.jpg"]
 
 
   title = 'sligowebsite';
@@ -19,6 +19,9 @@ export class AppComponent implements OnInit{
   list:boolean[] = [false,false,false,false,false,false]
 
   counter:number = 1
+
+  photo:string = this.photos[this.counter]
+
 
   changer(){
     setInterval(()=>{
@@ -30,7 +33,7 @@ export class AppComponent implements OnInit{
     },7000)
   }
 
-  shower(id:number){
+  public shower(id:number){
     for(let i=0;i<=6;i++){
       if(i != id){
         this.list[i]=false

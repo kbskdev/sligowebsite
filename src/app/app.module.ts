@@ -11,6 +11,7 @@ import { AboutsligoComponent } from './aboutsligo/aboutsligo.component';
 import { ServicesComponent } from './services/services.component';
 import { FaqComponent } from './faq/faq.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CovidInfoComponent } from './covid-info/covid-info.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     ServicesComponent,
     FaqComponent,
     NavbarComponent,
+    CovidInfoComponent,
   ],
   imports: [
     BrowserModule,

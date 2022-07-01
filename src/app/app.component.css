@@ -4,13 +4,18 @@
   height: 90vh;
 
 }
-@keyframes show {
-  0%{
+@keyframes showergel {
+  0% {
     opacity: 0;
-
+  }
+  5%{
+    opacity: 1;
+  }
+  95%{
+    opacity: 1;
   }
   100%{
-    opacity: 1;
+    opacity: 0;
   }
 }
 .left-text{
@@ -24,12 +29,12 @@
 .photo{
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 90%;
+  background-size: 100%;
   height: 100%;
   width: 100%;
   -webkit-box-shadow: inset 0px 0px 16px 0px #000000;
   box-shadow: inset 0px 0px 16px 0px #000000;
-  animation: linear 0.5s show;
+  animation: linear 7s showergel infinite;
 }
 .left-container{
   position: absolute;

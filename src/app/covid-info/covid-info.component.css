@@ -1,0 +1,17 @@
+:host{
+  display: flex;
+  width: 83%;
+  height:89%;
+  border: 0px solid white;
+  margin-top: 4.8%;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 8.3vw;
+  animation: linear 0.5s show;
+
+}
